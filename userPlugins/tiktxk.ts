@@ -17,7 +17,6 @@
 */
 
 import { addPreSendListener, removePreSendListener } from "@api/MessageEvents";
-import { Devs } from "@utils/constants";
 import definePlugin from "@utils/types";
 
 /**
@@ -31,7 +30,10 @@ const TIKTOK_PATTERN = /https?:\/\/(?:(?:(?:www\.))tiktok\.com\/(@[a-z\d]+\/vide
 export default definePlugin({
     name: "TikTxk",
     description: "Uses TikTxk to properly embed TikTok videos",
-    authors: [Devs.MyNameIsJeff],
+    authors: [{
+        name: "My-Name-Is-Jeff",
+        id: 150427554166210560n
+    }],
     dependencies: ["MessageEventsAPI"],
 
     replaceLinks(_channelId, message, _extra) {
