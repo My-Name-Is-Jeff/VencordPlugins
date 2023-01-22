@@ -1,0 +1,2 @@
+# VencordPlugins
+Plugins for Vencord
